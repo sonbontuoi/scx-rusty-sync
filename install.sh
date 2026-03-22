@@ -34,4 +34,11 @@ echo "Đang kiểm tra trạng thái nguồn điện hiện tại..."
 /opt/scx-rusty-sync/scx-rusty-sync.sh
 
 echo -e "${GREEN}--- Cài đặt HOÀN TẤT! ---${NC}"
+echo -e "${GREEN}Đang dọn dẹp bộ cài tạm thời...${NC}"
+
+cd ../
+rm -rf ./scx-rusty-sync
+echo "Đã xóa thư mục cài đặt"
+
+echo -e "${GREEN}--- TẤT CẢ ĐÃ SẴN SÀNG! ---${NC}"
 echo "Máy của bạn đã sẵn sàng tự động hóa bộ lập lịch Rusty."
