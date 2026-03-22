@@ -1,0 +1,12 @@
+[Unit]
+Description=Initial Setup for Rusty Scheduler and ASUS Fan Boost
+After=multi-user.target
+DefaultDependencies=no
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/opt/scx-rusty-sync/scx-rusty-sync.sh
+
+[Install]
+WantedBy=multi-user.target

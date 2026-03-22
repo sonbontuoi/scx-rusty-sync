@@ -1,0 +1,11 @@
+[Unit]
+Description=High Performance Rusty Scheduler
+StartLimitIntervalSec=30
+StartLimitBurst=3
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/scx_rusty --perf 1024 --slice-us-overutil 500 -g 1
+Restart=always
+RestartSec=5s
+Nice=-20
